@@ -1,8 +1,11 @@
 // import functions and grab DOM elements
 import { colors } from './colors-data.js';
 import { renderColorEl } from './render-colors.js';
+import { whales } from './whales-data.js';
+import { renderWhaleEl } from './render-whales.js';
 
 const colorListEl = document.querySelector('.color');
+const whalesListEl = document.querySelector('.whales-list');
 
 for (let color of colors) {
   const colorEl = renderColorEl(color);
@@ -10,7 +13,11 @@ for (let color of colors) {
   colorListEl.append(colorEl);
 }
 
+for (let whale of whales) {
+  const whalesEl = renderWhaleEl(whale);
 
+  whalesListEl.append(whalesEl);
+}
 
 // initialize global state
 

@@ -10,11 +10,20 @@ export function renderWhaleEl(whales) {
 
   const whalesEl = document.createElement('div');
   const imgEl = document.createElement('img');
-  const nameEl = document.creatElement('h3');
+  const whaleNameEl = document.createElement('h3');
   const lengthEl = document.createElement('p');
   const weightEl = document.createElement('p');
   const dietEl = document.createElement('p');
 
   whalesEl.classList.add('whales');
 
-  imgEl.src = `assets/${whales.name}.png`
+  imgEl.src = `assets/${whales.name}.png`;
+  whaleNameEl.textContent = (whales.name);
+  lengthEl.textContent = `Length: ${whales.lengthInFeet}`;
+  weightEl.textContent = `Weight: ${whales.weightInLbs}`;
+  dietEl.textContent = whales.diet;
+
+  whalesEl.append(imgEl, whaleNameEl, lengthEl, weightEl, dietEl);
+
+  return whalesEl;
+}
