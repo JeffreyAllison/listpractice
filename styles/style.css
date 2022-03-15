@@ -93,7 +93,7 @@ footer {
     box-shadow: var(--shadow);
 }
 
-.color-list .whales.list {
+.color-list .whales-list .amps-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -102,7 +102,7 @@ footer {
     width: 200px;
 }
 
-.color .whales {
+.color .whales .amps {
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
