@@ -15,4 +15,6 @@ export function renderWhaleEl(whales) {
   const weightEl = document.createElement('p');
   const dietEl = document.createElement('p');
 
-  whaleEl.classList.add('whales')
+  whalesEl.classList.add('whales');
+
+  imgEl.src = `assets/${whales.name}.png`
