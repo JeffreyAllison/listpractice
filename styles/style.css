@@ -92,6 +92,32 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
 }
+
+.color-list .whales.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+}
+
+.color .whales {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+}
+
+.whales img {
+    height: 200px;
+    width: 300px;
+}
+
+
   
   @keyframes pulse {
     20% {
