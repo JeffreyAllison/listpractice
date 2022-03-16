@@ -28,7 +28,7 @@ export const amps = [
     stats: {
       wattage: 120,
       type: 'solid state',
-      format: 'head'
+      format: 'combo'
 
     }
   }
